@@ -1,0 +1,126 @@
+@import"normalize.css";
+        /*导航*/
+         div#header h1 {
+            color: white;
+            padding: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 微软雅黑;
+        }
+        a{text-decoration: none;}
+
+        div#header {
+            background-color: #333;
+            height: 60px;
+        }
+
+        ul#nav {
+            position: absolute;
+            right: 2%;
+            top: 2%;
+        }
+
+        ul li{ list-style: none;  }
+
+        ul#nav li { display: inline; }
+        ul#nav a:link { color: gray; }
+        ul#nav a:visited { color: white; }
+        ul#nav a:hover { color: red; }
+        ul#nav a:active { color: red; }
+        /*三栏*/
+         div#theOne {
+             background-color: #eee;
+             padding: 20px;
+             margin: 20px;
+             position: relative;
+         }
+
+         div#left {
+             width: 200px;
+             left:0px;
+             position: absolute;
+             border: 1px solid #999;
+             padding: 20px;
+             margin: 20px;
+             top: 0px;
+             background-color: white;
+         }
+
+         div#center {
+           
+             width: 60%;
+             border: 1px solid #999;
+             padding: 19px;
+             background-color: white;
+         }
+
+         div#right {
+             width: 30%;
+             right: 0px;
+             height: 1026px;
+             position:absolute;
+             border: 1px solid #999;
+             margin: 20px;
+             padding: 20px;
+             top: 0px;
+             
+             background-image:url("./images/w5.jpg"); 
+             background-position: center 0;   
+             background-repeat: no-repeat;   
+             background-attachment:fixed;   
+             background-size: cover;   
+             -webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */  
+             -o-background-size: cover;/* 兼容Opera */   
+             zoom: 1;   
+         }
+
+         div#right.height { padding-top: 20px;}
+
+         h3 {
+             float: right;
+         }
+
+         div#left img {
+             margin: 20px 0;
+         }
+        h4{
+            text-align: center;
+        }
+        div#dudu{
+            border-style: inset;
+            margin: 5px;
+            padding: 7px;
+            border-width: 3px;
+            border-color: aqua;
+
+        }
+        #xiang{
+            width: 360px;
+            border-style: solid;
+            padding: 10px;
+            border-width: 1pxpx ;
+            border-color: aquamarine;
+            margin: auto;
+        }
+        div#text1{
+            margin: auto;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: #333333;
+          }
+      
+          a:hover {
+            text-decoration: underline;
+            color: #45bcf9;
+          }
+      
+          .del {
+            float: right;
+          }
+      
+       

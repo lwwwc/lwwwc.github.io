@@ -4,110 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>详情页</title>
-    <style>
-        /*导航*/
-         div#header h1 {
-            color: white;
-            padding: 10px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 微软雅黑;
-        }
-        a{text-decoration: none;}
-
-        div#header {
-            background-color: #333;
-            height: 60px;
-        }
-
-        ul#nav {
-            position: absolute;
-            right: 2%;
-            top: 2%;
-        }
-
-        ul li{ list-style: none;  }
-
-        ul#nav li { display: inline; }
-        ul#nav a:link { color: gray; }
-        ul#nav a:visited { color: white; }
-        ul#nav a:hover { color: red; }
-        ul#nav a:active { color: red; }
-        /*三栏*/
-         div#theOne {
-             background-color: #eee;
-             padding: 20px;
-             margin: 20px;
-             position: relative;
-         }
-
-         div#left {
-             width: 200px;
-             left:0px;
-             position: absolute;
-             border: 1px solid #999;
-             padding: 20px;
-             margin: 20px;
-             top: 0px;
-             background-color: white;
-         }
-
-         div#center {
-             margin: 0 180px 0 260px;
-             border: 1px solid #999;
-             padding: 19px;
-             background-color: white;
-         }
-
-         div#right {
-             width: 120px;
-             right: 0px;
-             position:absolute;
-             border: 1px solid #999;
-             margin: 20px;
-             padding: 20px;
-             top: 0px;
-             background-color: white;
-         }
-
-         div#right.height { padding-top: 20px;}
-
-         h3 {
-             float: right;
-         }
-
-         div#left img {
-             margin: 20px 0;
-         }
-        h4{
-            text-align: center;
-        }
-        div#dudu{
-            border-style: inset;
-            margin: 5px;
-            padding: 7px;
-            border-width: 3px;
-            border-color: aqua;
-
-        }
-        #xiang{
-            width: 360px;
-            border-style: solid;
-            padding: 10px;
-            border-width: 1pxpx ;
-            border-color: aquamarine;
-            margin: auto;
-        }
-        div#text1{
-            margin: auto;
-            text-align: center;
-        }
-
-    </style>
+    
     <link rel="stylesheet" href="./zt/iconfont.css">
+    <link rel="stylesheet" href="./xq.css">
+    <script src="./xq.js"></script>
 </head>
 <body>
     <div id="header">
@@ -120,10 +20,6 @@
         </ul>
     </div>
     <div id="theOne">
-        <div id="left">
-            
-            <h3>志愿名称<h3>
-        </div>
         <div id="center">
             <div id="dudu">
             <h2>嘟嘟城</h2>
@@ -177,8 +73,14 @@
 
         </div>
         <div id="right">
-           
-        </div>
+            
+                <label>文章名称：<input id="aqi-wenzhang-input" type="text"></label><br>
+               <label>分数：<input id="aqi-value-input" type="text"></label><br>
+                <button id="add-btn">确认添加</button>
+              </div>
+              <table id="aqi-table">
+              </table>
+        
 
     </div>
 
