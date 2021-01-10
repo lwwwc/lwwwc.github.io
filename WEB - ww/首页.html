@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 微软雅黑;
+        }
+
+        body { background-color: #d8d8d8; }
+
+        div#header h1 {
+            color: white;
+            padding: 10px;
+        }
+
+        div#header {
+            background-color: #333;
+            height: 60px;
+        }
+
+        ul#nav {
+            position: absolute;
+            right: 2%;
+            top: 2%;
+        }
+
+        ul#nav li { display: inline; }
+
+        ul#nav a:link { color: gray; }
+        ul#nav a:visited { color: white; }
+        ul#nav a:hover { color: red; }
+        ul#nav a:active { color: red; }
+
+        div.article {
+            background-color: #fff;
+            margin: 20px;
+            padding: 15px;
+            box-shadow: 10px 10px 5px #888888;
+        }
+
+        h2 { color: rgba(90,90,90,0.8); }
+        h5 { color: rgba(100,100,100,0.5); }
+
+        p { text-indent: 2em; }
+
+        #nav ul{
+            padding: 10px;
+        }
+        #none {
+            list-style: none;
+            margin-left: 2%;
+        }
+
+        ul li{
+            list-style: none;
+        }
+
+        div.picture {
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+            width: 120px;
+            margin: 1% 0 0 2%;
+        }
+
+        ol#left { margin-left: 2%; }
+
+        th {
+            background-color: black;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        tr#color { background-color: #d8d8d8; }
+
+        #submit {
+
+            width: 360%;
+            background-color: #0000cc;
+            color: white;
+            border-radius: 15px;
+            height: 45px;
+            margin-left: -30%;
+        }
+
+        a { text-decoration: none;}
+
+        #table {
+            display: table;
+            margin-left: 10%;
+            width: 100%;
+        }
+
+        #table p {
+            display: table-cell;
+
+        }
+
+        div.tableRow {
+            display: table-row;
+
+        }
+
+        div.tableRow p:first-child {
+            text-align: right;
+            padding-top: 10px;
+        }
+
+        h5.toleft {
+            margin-left: 2.5%;
+        }
+
+        div#footer  {
+            color: white;
+            padding-top: 15px;
+            background-color: #333;
+            height: 40px;
+            text-align: center;
+        }
+
+        .right,.left {
+    margin-top: -20px;
+}
+
+#banner {
+    width: 100%;
+    height: 400px;
+    margin:0 auto;
+    border-radius: 5px;
+    overflow:hidden;
+    position: relative;
+    z-index: 1;
+}
+#banner ul {
+    width: 100%;
+    height: 100%;
+}
+
+#banner ul li{
+    width: 100%;
+    height: 100%;
+    opacity:0;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+#banner ul li.curr{
+    opacity:1;
+    /*display:block;*/
+
+}
+.icon{
+    position:absolute;
+    left:0px;
+    bottom:8px;
+    width:100%;
+    text-align:center;
+}
+.icon ol li{
+    display:inline-block;
+    list-style:none;
+    width:10px;
+    height:10px;
+    background:#000;
+    border-radius:50%;
+    color:#fff;
+    text-align:center;
+    cursor:pointer;
+}
+.icon ol li.first{
+
+    background:#fff;
+}
+.btn{
+     display:none;
+     margin-top: -25px;
+}
+.btn div{
+    position:absolute;
+    top:50%;
+    width:50px;
+    height:50px;
+    background:rgba(0,0,0,0.2);
+    color:#fff;
+    text-align:center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.btn div.left{
+    left:0;
+}
+.btn div.right{
+    right:0;
+}
+    </style>
+     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="./zt/iconfont.css">
+</head>
+<body>
+    <div id="header">
+        <h1>青年志愿者协会</h1>
+        <ul id="nav">
+            <li><a href="首页.html"><i class="iconfont icon-shouye">首页</i></a></li>
+            <li><a href="#"><i class="iconfont icon-zuopin">基地介绍</i></a></li>
+            <li><a href="列表页.html"><i class="iconfont icon-zuopin">志愿招募</i></a></li>
+            <li><a href="#"><i class="iconfont icon-wode">关于我</i></a></li>
+        </ul>
+    </div>
+<div class="article">
+    <div id="banner">
+        <div id="banner-move">
+        <ul>
+            <li class="curr"><img src="images/1.jpg" width="100%" height="100%" alt="轮播"></li>
+            <li><img src="images/2.jpg" width="100%" height="100%" alt="轮播"></li>
+            <li><img src="images/3.jpg" width="100%" height="100%" alt="轮播"></li>
+            <li><img src="images/4.jpg" width="100%" height="100%" alt="轮播"></li>
+            <li><img src="images/5.jpg" width="100%" height="100%" alt="轮播"></li>
+            <li><img src="images/6.jpg" width="100%" height="100%" alt="轮播"></li>
+           
+        </ul>
+        <div class="icon">
+            <ol>
+                <li class="first"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+        <div class="btn">
+            <div class="left"> < </div>
+            <div class="right"> > </div>
+        </div>
+
+        </div>
+    </div>
+    
+
+</div>
+<div class="article">
+    <h1><a href="列表页.html">关于志愿的文章</a></h1><br>
+    <h2>支教感悟</h2><br>
+    <h5>枯木逢春 2020-01-09</h5><br>
+    <p>有一种生活，没有经历过就不知道其中的艰辛；有一种艰辛，没有体会过就不知道其中的快乐；有一种快乐，没有拥有过就不知道其中的纯粹。不知不觉，时光如白驹过隙，这段支教的日子，到此就告一段落了。来到新疆的这些日子里，所有的纠结和不安、理想与抱负，都在生活的大熔炉里淬炼，让我不断成长。</p>
+    <p>来到巴仁乡八一爱民学校之前，我未曾想到过，我真正地走上人生中的第一个讲台的样子。在这里的四个月不仅教会了同学们一些国语知识，我也在教他们的同时提高了自己的知识和能力，正如有句古语所言：“学，然后知不足，教，然后知困，知不足然后能自反也，知困，然后能自强也，故曰教学相长也。”
+
+    </p>
+    <p>我希望这些孩子们能够早早的明白为什么要用功学习，也希望他们能明白，年少时多受些读书的苦，将来才能少受些生活的苦，而不是在处于被生活所迫的困境时再后悔曾经浪费的光阴。
+
+    </p>
+    <p>我深刻感受到此次新疆之行，真的是一次意义非凡的修行。没有支教，我不会知道炒菜加多少盐，烧饭放多少水，不会知道老师是怎么看待学生，也不会知道人与人之间的相处需要怎样的互相理解与支持，更不会深刻的领悟到集体意识的重要性。回首望去，我们和孩子们其实是一个相互学习相互成长的关系，但我想，或许我还没能真正成为一个合格的老师。这是我二十年来做的最有意义的一件事也是最正确最勇敢的一个决定，这一百多天将永远在我的生命中熠熠生辉！
+
+    </p>
+    <p>
+        <em>
+        支教并不只是支教本身，更是责任的表现，也是政策落实的有力表现。都说教育孩子是牵着蜗牛散步，让他慢慢长大。想让他们像蝴蝶一样飞，就要耐心等待破茧。
+      </em>
+
+    </p>
+    <p>
+        人生总要有许多体验，有时需要走出平常习惯的生活去看看另一个世界。支教的这段时光让我看到了不一样的世界。正如那句话所说：“让人成长的，不是岁月，而是经历！”
+
+
+    </p>
+    <p>
+        九月欣然来，一月载誉归。只有真真正正的体验过支教才知道支教究竟是怎样的一个概念，这其中的意义究竟有多大。巴仁乡八一爱民学校是我成长的第一个站牌，也希望我能在将来的道路上不断奋斗不断前进，越走越远。
+
+
+    </p>
+    <p>
+        我很感谢我的孩子们，永远带给我最灿烂的笑脸，让我相信世间的纯真；也很感谢援疆支教的历练，让我得以更精彩的成长。
+    </p>
+    <p>
+        愿此去前程似锦，再相逢依然如故。
+
+
+    </p>
+</div>
+
+<div id="footer">
+    <h3>版权所有©<h3>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+    /*jquery的轮播图*/
+        var index=0;
+        var $icons=$(".icon ol li");
+        var $imgs=$("#banner ul li");
+        //右边按钮点击切换
+        $(".right").click(function(){
+            index++;
+            if(index>5)index=0;
+            play();
+        });
+    
+        //左边按钮点击切换
+        $(".left").click(function(){
+            index--;
+            if(index<0)index=5;
+            play();
+        });
+    
+        //页面联动封装
+        function play(){
+            //选择当前的index然后添加curr类，然后选择同级的元素，移出curr,下面的一句也是一样的道理
+            $imgs.eq(index).addClass('curr').siblings().removeClass('curr');
+            $icons.eq(index).addClass('first').siblings().removeClass('first');
+        }
+        //移动到谁的上面，就传入谁的index值
+        $icons.hover(function(){
+            index=$(this).index();
+            play();
+        });
+    
+        //鼠标移动实现页面停止效果
+        $("#banner").hover(function(){
+            $(".btn").show();
+            clearTimeout(timer);
+        },function(){
+            $(".btn").hide();
+            autoplay();
+        });
+        //开启自动轮播
+        autoplay();
+        function autoplay()
+        {
+            timer=setInterval(function(){
+            index++;
+            if(index>5)index=0;
+                //开启播放
+                play();
+            },2000);
+        }
+    
+    
+    /*jquery的轮播图*/
+    
+    </script>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册表单</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 微软雅黑;
+        }
+         div#header h1 {
+            color: white;
+            padding: 10px;
+        }
+
+        div#header {
+            background-color: #333;
+            height: 60px;
+        }
+
+        ul#nav {
+            position: absolute;
+            right: 2%;
+            top: 2%;
+        }
+        a{text-decoration: none;}
+
+        ul#nav li { display: inline; }
+
+        ul#nav a:link { color: gray; }
+        ul#nav a:visited { color: white; }
+        ul#nav a:hover { color: red; }
+        ul#nav a:active { color: red; }
+        div#center{
+          position: absolute;
+          margin-left: 30%;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1>青年志愿者协会</h1>
+        <ul id="nav">
+            <li><a href="首页.html">首页</a></li>
+            <li><a href="https://github.com/woai3c">基地介绍</a></li>
+            <li><a href="列表页.html">志愿招募</a></li>
+            <li><a href="https://github.com/woai3c">关于我们</a></li>
+        </ul>
+    </div>
+    <div text-align="center" id="center">
+      <form action="" name="form1">
+       <table width="500" >
+        <caption><h4>志愿情，你我行</h4></caption>
+        <tr>
+            <td>*用户名</td>
+            <td><input type="text" name="user" id="txt_submit" placeholder="请输入6~10个字符的中文"><span id="msg"></span></td>
+        </tr>
+        <tr>
+            <td>*学号</td>
+            <td><input type="number" id="snumber"><span id="msg_snum"></span></td>
+        </tr>
+        <tr>
+            <td> 学院</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>*密码</td>
+            <td><input type="password" name="pwd" id="password"><span id="pwdsmg"></span></td>
+        </tr>
+        <tr>
+            <td>*重复密码</td>
+            <td><input type="password" name="pwdl" id="confirmPassword"><span id="pwdlsmg"></span></td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td>
+                男<input type="radio" name="sex">
+                女<input type="radio" name="sex">
+            </td>
+        </tr>
+        <tr>
+            <td>生日</td>
+            <td>
+                <select>
+                    <option>请选择年份</option>
+                    <option>1996年</option>
+                    <option>1997年</option>
+                    <option>1998年</option>
+                </select>
+                <select name="" id="">
+                    <option value="">请选择月份</option>
+                    <option value="">一月</option>
+                    <option value="">二月</option>
+                    <option value="">三月</option>
+                </select>
+                <select name="" id="">
+                    <option value="">请选择日期</option>
+                    <option value="">1号</option>
+                    <option value="">2号</option>
+                    <option value="">3号</option>
+                    <option value="">4号</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>手机号</td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+        <tr>
+            <td>自我介绍</td>
+            <td>
+                <textarea cols="40" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="提交" id="btn_submit">
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox">我同意注册条款和会员加入标准
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <a href="首页.html">游客登录</a>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><h3>我承诺</h3>
+                <ul>
+                    <li>年满18岁，单身</li>
+                    <li>抱着严肃的态度</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+     </div>
+</form>
+<script>
+    window.onload = function() {
+        var txt_submit = document.getElementById("txt_submit");
+        var btn_submit = document.getElementById("btn_submit");
+        var msg = document.getElementById("msg");
+        btn_submit.onclick = function() {
+        // 获取文本内容
+        var strText = txt_submit.value;
+
+        // 必填项验证
+        if ("" == strText) {
+          msg.innerHTML = "该输入项不能为空";
+          return false;
+        }
+
+        // 最小长度验证
+        if (strText.length < 6) {
+          msg.innerHTML = "输入长度不能小于6";
+          return false;
+        }
+
+        // 最大长度验证
+        if (strText.length > 10) {
+          msg.innerHTML = "输入长度不能大于10";
+          return false;
+        }
+
+        // 汉字验证
+        if (!/^[\u4e00-\u9fa5]+$/.test(strText)) {
+          msg.innerHTML = "必须输入汉字";
+          return false;
+        }
+        // 错误信息清空   
+        msg.innerHTML = "";
+        return true;
+
+      };
+     
+}
+</script>
+
+</body>
+</html>

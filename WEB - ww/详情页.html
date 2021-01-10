@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <style>
+        /*导航*/
+         div#header h1 {
+            color: white;
+            padding: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 微软雅黑;
+        }
+        a{text-decoration: none;}
+
+        div#header {
+            background-color: #333;
+            height: 60px;
+        }
+
+        ul#nav {
+            position: absolute;
+            right: 2%;
+            top: 2%;
+        }
+
+        ul li{ list-style: none;  }
+
+        ul#nav li { display: inline; }
+        ul#nav a:link { color: gray; }
+        ul#nav a:visited { color: white; }
+        ul#nav a:hover { color: red; }
+        ul#nav a:active { color: red; }
+        /*三栏*/
+         div#theOne {
+             background-color: #eee;
+             padding: 20px;
+             margin: 20px;
+             position: relative;
+         }
+
+         div#left {
+             width: 200px;
+             left:0px;
+             position: absolute;
+             border: 1px solid #999;
+             padding: 20px;
+             margin: 20px;
+             top: 0px;
+             background-color: white;
+         }
+
+         div#center {
+             margin: 0 180px 0 260px;
+             border: 1px solid #999;
+             padding: 19px;
+             background-color: white;
+         }
+
+         div#right {
+             width: 120px;
+             right: 0px;
+             position:absolute;
+             border: 1px solid #999;
+             margin: 20px;
+             padding: 20px;
+             top: 0px;
+             background-color: white;
+         }
+
+         div#right.height { padding-top: 20px;}
+
+         h3 {
+             float: right;
+         }
+
+         div#left img {
+             margin: 20px 0;
+         }
+        h4{
+            text-align: center;
+        }
+        div#dudu{
+            border-style: inset;
+            margin: 5px;
+            padding: 7px;
+            border-width: 3px;
+            border-color: aqua;
+
+        }
+        #xiang{
+            width: 360px;
+            border-style: solid;
+            padding: 10px;
+            border-width: 1pxpx ;
+            border-color: aquamarine;
+            margin: auto;
+        }
+        div#text1{
+            margin: auto;
+            text-align: center;
+        }
+
+    </style>
+    <link rel="stylesheet" href="./zt/iconfont.css">
+</head>
+<body>
+    <div id="header">
+        <h1>青年志愿者协会</h1>
+        <ul id="nav">
+            <li><a href="首页.html"><i class="iconfont icon-shouye">首页</i></a></li>
+            <li><a href="#"><i class="iconfont icon-zuopin">基地介绍</i></a></li>
+            <li><a href="列表页.html"><i class="iconfont icon-zuopin">志愿招募</i></a></li>
+            <li><a href="#"><i class="iconfont icon-wode">关于我</i></a></li>
+        </ul>
+    </div>
+    <div id="theOne">
+        <div id="left">
+            
+            <h3>志愿名称<h3>
+        </div>
+        <div id="center">
+            <div id="dudu">
+            <h2>嘟嘟城</h2>
+                <p>“杭州嘟嘟城”（Do都城）少儿社会体验馆是国内首家、场馆规模亚洲最大的少年儿童体验类教育场馆。</p>
+                　　<p>在这里，孩子们可以像大人一样，在安全互动的环境中尝试各项工作，体验真实的社会活动，理解通过劳动取得报酬的生存道理，为未来的健康成长和职业发展打下良好的认识基础。</p>
+                　　<p>在“杭州嘟嘟城”，孩子们可以尽情选择自己理想中的各种职业：消防员、宇航员、考古学家、记者、医生、机长、设计师、主播、驾驶员、建筑工人……提前在杭州嘟嘟城实现他们未来的梦想！</p>
+                　　<p>“杭州嘟嘟城”的建筑、设施、设备是实物大小的70%，完全符合少年儿童活动场所的适用性与安全性的需要。而4-12岁的少年儿童是这个城市的真正主人。</p>
+            　　<p>“杭州嘟嘟城”得到了社会各级各类机构的倾力支持！使得“杭州嘟嘟城”这个小社会既是虚拟的也是现实的，孩子们的体验既是仿真的也是专业的。</p>
+            </div>
+            <br>
+            <br>
+
+            <h4 id="xiang">想当年我们小的时候在玩些什么呢来怀念一下吧！</h4>
+            <div id="text1">
+            <img src="x1.jpg">
+            <p>
+                1.小时候，我们经常会玩跳房子的游戏。人数为双，一般会分为两组，将自己的瓦片扔到特定的位置，要扔准然后跳上去再跳回来，跳回来的时候只要记得将自己的瓦片给捡起来，然后依此类推。
+            </p>
+            <br>
+            <img src="x2.jpg">
+            <p>
+                2.抓子。每人5个石子，抛起，背手接住。抓起，接不住的就算失败，得从头再来。在这个游戏中，永远都是心灵手巧的女孩子占上风。石子不好拿捏，很多人也会用小小的沙包代替。
+            </p>
+            <br>
+            <img src="x3.jpg">
+            <p>
+                3.拍洋画。 它的玩法很简单，两个人或者很多人，每个人拿出自己的一张画片，然后每个人顺次用手去拍，如果有人把画片拍的翻了过来，那么这张画片就是属于他的了。双方2张，轮流用各自的洋片扇对方放在地上的，以翻过另一面为取胜。多张并列，双方扇时手掌稍弓，猛抽向洋片边缘，为了借助风力将所有的洋片都翻到另一面。取胜方法有正反来回，留一张、两张不翻等等。
+            </p>
+            <br>
+            <img src="x4.jpg">
+            <p>
+                4.翻花绳。这个多为女生玩。先打个小巧的结，环绕于双手，撑开在空中。一人以手指将绳圈编成一种花样，另一人用手指接过来，翻成不同的花样，相互交替，直到一方不能再翻下去为止。我们那边的人说玩这个如果玩到翻不下去的时候就会打雷下雨，我觉得挺准的，哈哈。小时候好喜欢玩这个的。
+            </p>
+            <br>
+            <img src="x5.jpg">
+            <p>
+                5.丢手绢。一个小朋友丢手绢，在此基础上，进行了发展创新，请大家念儿歌，两个小朋友拿不同颜色的手绢，一起丢手绢，在以往的游戏中，都是单人单圈做，为增加游戏的趣味性，可以双人双圈，三人三圈
+            </p>
+            <br>
+            <img src="x6.jpg">
+            <p>
+                6.摸瞎子。在一个限定的空间，如教室、家里或地上画个圈，用红领巾把一个人双眼蒙上，去捉其他人，被捉住的人就要当"瞎子"。当"瞎子"的人，还要充分用耳朵来判断，练习听力以及在黑暗中的行动能力。
+            </p>
+            <BR>
+            <img src="x7.jpg">
+            <p>
+                7.跳橡皮筋。这是以各种技巧动作编排成组合动作，配合歌谣，跳出各种花式图案。貌似这个游戏一直陪我玩到初中毕业才没玩的。
+            </p>
+            </div>
+
+
+        </div>
+        <div id="right">
+           
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>

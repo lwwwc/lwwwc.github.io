@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 微软雅黑;
+        }
+         div#header h1 {
+            color: white;
+            padding: 10px;
+        }
+
+        div#header {
+            background-color: #333;
+            height: 60px;
+        }
+
+        ul#nav {
+            position: absolute;
+            right: 2%;
+            top: 2%;
+        }
+        a{text-decoration: none;}
+
+        ul#nav li { display: inline; }
+
+        ul#nav a:link { color: gray; }
+        ul#nav a:visited { color: white; }
+        ul#nav a:hover { color: red; }
+        ul#nav a:active { color: red; }
+
+        /*三栏*/
+        div#theOne {
+            background-color: #eee;
+            padding: 20px;
+            margin: 20px;
+            position: relative;
+        }
+
+        div#left {
+            width: 200px;
+            left:0px;
+            position: absolute;
+            border: 1px solid #999;
+            padding: 20px;
+            margin: 20px;
+            top: 0px;
+            background-color: white;
+            text-align: center;
+        }
+
+        div#center {
+            margin: 0 180px 0 260px;
+            border: 1px solid #999;
+            padding: 19px;
+            background-color: white;
+        }
+
+        div#right {
+            width: 120px;
+            right: 0px;
+            position:absolute;
+            border: 1px solid #999;
+            margin: 20px;
+            padding: 20px;
+            top: 0px;
+            background-color: white;
+        }
+
+        div#right.height { padding-top: 20px;}
+
+        h3 {
+            float: right;
+        }
+
+        div#left img {
+            margin: 20px 0;
+        }
+        div#left p{
+            font-size: medium;
+            text-align: left;
+        }
+
+    </style>
+
+<link rel="stylesheet" href="./zt/iconfont.css">
+
+</head>
+<body>
+    <div id="header">
+        <h1>青年志愿者协会</h1>
+        <ul id="nav">
+            <li><a href="首页.html"><i class="iconfont icon-shouye">首页</i></a></li>
+            <li><a href="#"><i class="iconfont icon-zuopin">基地介绍</i></a></li>
+            <li><a href="列表页.html"><i class="iconfont icon-zuopin">志愿招募</i></a></li>
+            <li><a href="#"><i class="iconfont icon-wode">关于我</i></a></li>
+        </ul>
+    </div>
+
+    <div id="theOne">
+        <div id="left">
+            <h2 ><i class="iconfont icon-yuedu"></i>志愿随笔与感悟<h2>
+                <ul>
+                    <li><a href="#">青春暖夕阳，志愿助养老</li>
+                    <li><a href="#">何为公益何为志愿</a></li>
+                    <li><a href="#">抗疫志愿活动感悟</a></li>
+                    <li><a href="#"> 参加了几年西部志愿者后，有什么感想？</a></li>
+                </ul>          
+        </div>
+        <div id="center">
+            <h2><a href="详情页.html">嘟嘟城</a> </h2>
+            <p>“杭州嘟嘟城”（Do都城）少儿社会体验馆是国内首家、场馆规模亚洲最大的少年儿童体验类教育场馆。
+             在这里，孩子们可以像大人一样，在安全互动的环境中尝试各项工作，体验真实的社会活动，理解通过劳动取得报酬的生存道理，为未来的健康成长和职业发展打下良好的认识基础。
+             在“杭州嘟嘟城”，孩子们可以尽情选择自己理想中的各种职业：消防员、宇航员、考古学家、记者、医生、机长、设计师、主播、驾驶员、建筑工人……提前在杭州嘟嘟城实现他们未来的梦想！
+             “杭州嘟嘟城”的建筑、设施、设备是实物大小的70%，完全符合少年儿童活动场所的适用性与安全性的需要。而4-12岁的少年儿童是这个城市的真正主人。
+             “杭州嘟嘟城”得到了社会各级各类机构的倾力支持！使得“杭州嘟嘟城”这个小社会既是虚拟的也是现实的，孩子们的体验既是仿真的也是专业的。</p>
+            <h2><a href="#">胡雪岩故居</a></h2>
+            <p>
+                  胡雪岩故居，位于杭州市河坊街、大井巷历史文化保护区东部的元宝街，建于清同治十一年（1872年）胡雪岩事业的颠峰时期，
+                当时豪宅工程历时3年，于1875年竣工。落成的故居是一座富有中国传统建筑特色又颇具西方建筑风格的美轮美奂的宅第，整个建筑南北长东西宽
+                ，占地面积10.8亩，建筑面积5815平方米。故居无论是从建筑还是到室内家具的陈设，用料之考究，堪称清末中国巨商第一豪宅。
+            </p>
+            <h2><a href="#">省听力儿童康复中心</a></h2>
+            <p>
+                浙江省听力语言康复中心原名浙江省聋儿康复中心,于1996年3月5日正式成立，为浙江省残联下属的全额拨款事业单位
+                ，全国人工耳蜗项目定点康复机构之一。中心位于浙江省省会杭州市清泰小区内，占地面积1360平方米，建筑面积达到2000平方米。
+                浙江省聋儿康复中心是省内聋儿康复工作的技术资源中心和业务管理部门。具有“指导、培训、评估”三大职能. 
+            </p>
+        </div>
+        <div id="right">
+            <h2 ><i class="iconfont icon-yuedu"></i>志愿随笔与感悟<h2>
+                <p><a href="#">青春暖夕阳，志愿助养老</a></p>
+                <p><a href="#">何为公益何为志愿</i></a></p>
+                <p><a href="#">抗疫志愿活动感悟</a></p>
+                <p><a href="#"> 参加了几年西部志愿者后，有什么感想？</a></p>
+        </div>
+</body>
+</html>
